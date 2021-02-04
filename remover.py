@@ -31,8 +31,6 @@ def find_duplicate_files():
     regex_duplicate = re.compile(r'\s[(]\d+[)]\.')
     if regex_duplicate.findall(file):
       files_for_removal.append(file)
-      # print(file)
-  # print(files_for_removal)
   return files_for_removal
 
 
